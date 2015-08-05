@@ -5,5 +5,6 @@ set -e
 npm install
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 export HUBOT_SLACK_TOKEN=xoxb-8388693635-qaQPtY0ZZ7H7unzrVLBTi4gj
+export HUBOT_YOUTUBE_API_KEY=AIzaSyDvEpB_xVEk3Xt0IIU8sXbyEGIdjf33CEM
 
 exec node_modules/.bin/hubot --name "juiz" "$@"
