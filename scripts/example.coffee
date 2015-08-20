@@ -10,7 +10,7 @@
 
 module.exports = (robot) ->
   
-  robot.hear /kill (.*)/i, (res) ->
+  robot.respond /kill (.*)/i, (res) ->
     name = res.match[1]
     res.send "Assassination of #{name} confirmed. Noblesse Oblige, I pray for your continuing service as a savior."
     
