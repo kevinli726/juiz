@@ -14,7 +14,7 @@ module.exports = (robot) ->
     name = res.match[1]
     res.send "Assassination of #{name} confirmed. Noblesse Oblige, I pray for your continuing service as a savior."
   robot.respond /show balance/i, (res) ->
-    bal = Math.floor(Math.random() * 10000000001)
+    bal = Math.floor(Math.random() * 9999999999 + 1)
     res.send "You have #{bal} yen left. Noblesse Oblige, I pray for your continuing service as a savior."
     
   # robot.hear /badger/i, (res) ->
